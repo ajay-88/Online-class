@@ -1,0 +1,345 @@
+<!doctype html>
+<html class="no-js" lang="zxx">
+<head>
+    {% load static %}
+    <meta charset="utf-8">
+    <meta http-equiv="x-ua-compatible" content="ie=edge">
+    <title>Courses | Education</title>
+    <meta name="description" content="">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="manifest" href="site.webmanifest">
+    <link rel="shortcut icon" type="image/x-icon" href="{% static 'assets/img/favicon.ico' %}">
+
+    <!-- CSS here -->
+    <link rel="stylesheet" href="{% static 'assets/css/bootstrap.min.css' %}">
+    <link rel="stylesheet" href="{% static 'assets/css/owl.carousel.min.css' %}">
+    <link rel="stylesheet" href="{% static 'assets/css/slicknav.css' %}">
+    <link rel="stylesheet" href="{% static 'assets/css/flaticon.css' %}">
+    <link rel="stylesheet" href="{% static 'assets/css/progressbar_barfiller.css' %}">
+    <link rel="stylesheet" href="{% static 'assets/css/gijgo.css' %}">
+    <link rel="stylesheet" href="{% static 'assets/css/animate.min.css' %}">
+    <link rel="stylesheet" href="{% static 'assets/css/animated-headline.css' %}">
+    <link rel="stylesheet" href="{% static 'assets/css/magnific-popup.css' %}">
+    <link rel="stylesheet" href="{% static 'assets/css/fontawesome-all.min.css' %}">
+    <link rel="stylesheet" href="{% static 'assets/css/themify-icons.css' %}">
+    <link rel="stylesheet" href="{% static 'assets/css/slick.css' %}">
+    <link rel="stylesheet" href="{% static 'assets/css/nice-select.css' %}">
+    <link rel="stylesheet" href="{% static 'assets/css/style.css' %}">
+
+</head>
+
+<body>
+    <!-- ? Preloader Start -->
+    <div id="preloader-active">
+        <div class="preloader d-flex align-items-center justify-content-center">
+            <div class="preloader-inner position-relative">
+                <div class="preloader-circle"></div>
+                <div class="preloader-img pere-text">
+                    <img src="{% static 'assets/img/logo/loder.png' %}" alt="">
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- Preloader Start -->
+    <header>
+        <!-- Header Start -->
+        <div class="header-area header-transparent">
+            <div class="main-header ">
+                <div class="header-bottom  header-sticky">
+                    <div class="container-fluid">
+                        <div class="row align-items-center">
+                            <!-- Logo -->
+                            <div class="col-xl-2 col-lg-2">
+                                <div class="logo">
+                                    <a href="index.html"><img src="{% static 'assets/img/logo/logo.png' %}" alt=""></a>
+                                </div>
+                            </div>
+                            <div class="col-xl-10 col-lg-10">
+                                <div class="menu-wrapper d-flex align-items-center justify-content-end">
+                                    <!-- Main-menu -->
+                                    <div class="main-menu d-none d-lg-block">
+                                        <nav>
+                                            <ul id="navigation">
+
+
+
+<!--                                                <li><a href="#">Blog</a>-->
+<!--                                                    <ul class="submenu">-->
+<!--                                                        <li><a href="blog.html">Blog</a></li>-->
+<!--                                                        <li><a href="blog_details.html">Blog Details</a></li>-->
+<!--                                                        <li><a href="elements.html">Element</a></li>-->
+<!--                                                    </ul>-->
+<!--                                                </li>-->
+
+                                                <!-- Button -->
+                                                <li class="button-header margin-left "><a href="./1" class="btn">Home</a></li>
+<!--                                                <li class="button-header"><a href="login.html" class="btn btn3">Log in</a></li>-->
+                                            </ul>
+                                        </nav>
+                                    </div>
+                                </div>
+                            </div>
+                            <!-- Mobile Menu -->
+                            <div class="col-12">
+                                <div class="mobile_menu d-block d-lg-none"></div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <!-- Header End -->
+    </header>
+    <br><br><br><br><br><br>
+
+
+         <section id="booking" data-stellar-background-ratio="3">
+            <div class="container">
+                <div class="row align-items-center">
+
+                    <div class="col-lg-6">
+                        <div class="about-img">
+                            <img src="{% static 'assets/img/gallery/about2.png' %}" alt="Image" style="width:550px; height:600px;">
+
+
+                        </div>
+                    </div>
+
+                    <div class="col-md-6 col-sm-6">
+
+                         <form id="booking-form" role="form" method="post" action="./57" enctype="multipart/form-data">
+                              {% csrf_token %}
+
+
+                              <div class="section-header text-center" data-wow-delay="0.4s">
+                                  <h1 style="font-size:40px;">Book 3 day Trail</h1>
+                              </div>
+
+                              <div class="control-group">
+                                  <label for="qualification"><b>Course</b></label>
+
+                                   <p class="help-block text-danger" style="font-size:20px;">Python</p>
+                              </div>
+
+                              <div class="control-group">
+                                  <label for="duration"><b>Duration</b></label>
+
+                                   <p class="help-block text-danger" style="font-size:20px;">3 days</p>
+                              </div>
+
+
+
+                              <div class="control-group">
+                                  <label for="name"><b>Name</b></label>
+                                  <input type="name" class="form-control" id="name" name="name" placeholder="User Name" required="required" data-validation-required-message="Please enter your name" style="height:30px; font-size:20px;" />
+                                   <p class="help-block text-danger"></p>
+                              </div>
+
+                              <div class="control-group">
+                                  <label for="number"><b>Phone</b></label>
+                                  <input type="number" class="form-control" id="number" name="number" placeholder="Phone no." required="required" data-validation-required-message="Please enter your number" style="height:30px; font-size:20px;" />
+                                   <p class="help-block text-danger"></p>
+                              </div>
+
+
+
+                              <div class="control-group">
+                                        <label for="photo"><b>Upload Photo</b></label>
+                                        <input type="file" class="form-control" id="photo" name="photo" placeholder="" required="required" style="height:30px; font-size:20px;">
+                              </div><br>
+
+                              <div class="control-group">
+                                  <label for="email"><b>Email</b></label>
+                                  <input type="email" class="form-control" id="email" name="email" placeholder="Email" required="required" data-validation-required-message="Please enter your email" style="height:30px; font-size:20px;" />
+                                   <p class="help-block text-danger"></p>
+                              </div>
+
+
+
+
+
+                              <div class="control-group">
+
+                                        <label for="Password"><b>Password</b></label>
+                                        <input type="password" class="form-control" id="password" name="password" placeholder="Your Password" required="required" data-validation-required-message="Please enter your password" pattern="(?=.*\d)(?=.*[a-z])(?=.*[A-Z]).{8,}" title="Must contain at least one number and one uppercase and lowercase letter, and at least 8 or more characters" style="height:30px; font-size:20px;" />
+                                        <br>
+
+                              </div>
+
+
+
+                             <div class="control-group">
+
+                               <script src="https://checkout.razorpay.com/v1/payment-button.js" data-payment_button_id="pl_NE9jtzL6tk9rez" async>
+                               </script>
+                                            
+                             </div>
+
+                              <div class="control-group">
+                                  <label for="Payid"><b>PaymentId</b></label>
+                                  <input type="tel" class="form-control" id="payid" name="payid" placeholder="Payment Id" required="required" style="height:30px; font-size:20px;">
+                              </div>  <br>
+
+                                        <div class="col-md-12 col-sm-12">
+                                            <button type="submit" class="btn hero-btn" id="cf-submit" name="signup">BookNow</button><br>
+
+                                        </div>
+                         </form>
+                    </div>
+
+
+
+
+                </div>
+            </div>
+     </section>
+    <br><br><br><br><br>
+
+
+
+
+
+
+
+
+
+<footer>
+     <div class="footer-wrappper footer-bg">
+        <!-- Footer Start-->
+        <div class="footer-area footer-padding">
+            <div class="container">
+                <div class="row justify-content-between">
+                    <div class="col-xl-4 col-lg-5 col-md-4 col-sm-6">
+                        <div class="single-footer-caption mb-50">
+                            <div class="single-footer-caption mb-30">
+                                <!-- logo -->
+                                <div class="footer-logo mb-25">
+                                    <a href="index.html"><img src="{% static 'assets/img/logo/logo2_footer.png' %}" alt=""></a>
+                                </div>
+<!--                                <div class="footer-tittle">-->
+<!--                                    <div class="footer-pera">-->
+<!--                                        <p>The automated process starts as soon as your clothes go into the machine.</p>-->
+<!--                                    </div>-->
+<!--                                </div>-->
+                                <!-- social -->
+                                <div class="footer-social">
+                                    <a href=""><i class="fab fa-twitter"></i></a>
+                                    <a href=""><i class="fab fa-facebook-f"></i></a>
+                                    <a href=""><i class="fab fa-pinterest-p"></i></a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+<!--                    <div class="col-xl-2 col-lg-3 col-md-4 col-sm-5">-->
+<!--                        <div class="single-footer-caption mb-50">-->
+<!--                            <div class="footer-tittle">-->
+<!--                                <h4>Our solutions</h4>-->
+<!--                                <ul>-->
+<!--                                    <li><a href="#">Design & creatives</a></li>-->
+<!--                                    <li><a href="#">Telecommunication</a></li>-->
+<!--                                    <li><a href="#">Restaurant</a></li>-->
+<!--                                    <li><a href="#">Programing</a></li>-->
+<!--                                    <li><a href="#">Architecture</a></li>-->
+<!--                                </ul>-->
+<!--                            </div>-->
+<!--                        </div>-->
+<!--                    </div>-->
+<!--                    <div class="col-xl-2 col-lg-4 col-md-4 col-sm-6">-->
+<!--                        <div class="single-footer-caption mb-50">-->
+<!--                            <div class="footer-tittle">-->
+<!--                                <h4>Support</h4>-->
+<!--                                <ul>-->
+<!--                                    <li><a href="#">Design & creatives</a></li>-->
+<!--                                    <li><a href="#">Telecommunication</a></li>-->
+<!--                                    <li><a href="#">Restaurant</a></li>-->
+<!--                                    <li><a href="#">Programing</a></li>-->
+<!--                                    <li><a href="#">Architecture</a></li>-->
+<!--                                </ul>-->
+<!--                            </div>-->
+<!--                        </div>-->
+<!--                    </div>-->
+<!--                    <div class="col-xl-2 col-lg-3 col-md-4 col-sm-6">-->
+<!--                        <div class="single-footer-caption mb-50">-->
+<!--                            <div class="footer-tittle">-->
+<!--                                <h4>Company</h4>-->
+<!--                                <ul>-->
+<!--                                    <li><a href="#">Design & creatives</a></li>-->
+<!--                                    <li><a href="#">Telecommunication</a></li>-->
+<!--                                    <li><a href="#">Restaurant</a></li>-->
+<!--                                    <li><a href="#">Programing</a></li>-->
+<!--                                    <li><a href="#">Architecture</a></li>-->
+<!--                                </ul>-->
+<!--                            </div>-->
+<!--                        </div>-->
+<!--                    </div>-->
+                </div>
+            </div>
+        </div>
+        <!-- footer-bottom area -->
+        <div class="footer-bottom-area">
+            <div class="container">
+                <div class="footer-border">
+                    <div class="row d-flex align-items-center">
+                        <div class="col-xl-12 ">
+                            <div class="footer-copy-right text-center">
+                                <p><!-- Link back to Colorlib can't be removed. Template is licensed under CC BY 3.0. -->
+                                  Copyright &copy;<script>document.write(new Date().getFullYear());</script> All rights reserved | This template is made with <i class="fa fa-heart" aria-hidden="true"></i> by <a href="https://colorlib.com" target="_blank">Colorlib</a>
+                                  <!-- Link back to Colorlib can't be removed. Template is licensed under CC BY 3.0. --></p>
+                              </div>
+                          </div>
+                      </div>
+                  </div>
+              </div>
+          </div>
+          <!-- Footer End-->
+      </div>
+  </footer>
+  <!-- Scroll Up -->
+  <div id="back-top" >
+    <a title="Go to Top" href="#"> <i class="fas fa-level-up-alt"></i></a>
+</div>
+
+<!-- JS here -->
+<script src="{% static './assets/js/vendor/modernizr-3.5.0.min.js' %}"></script>
+<!-- Jquery, Popper, Bootstrap -->
+<script src="{% static './assets/js/vendor/jquery-1.12.4.min.js' %}"></script>
+<script src="{% static './assets/js/popper.min.js' %}"></script>
+<script src="{% static './assets/js/bootstrap.min.js' %}"></script>
+<!-- Jquery Mobile Menu -->
+<script src="{% static './assets/js/jquery.slicknav.min.js' %}"></script>
+
+<!-- Jquery Slick , Owl-Carousel Plugins -->
+<script src="{% static './assets/js/owl.carousel.min.js' %}"></script>
+<script src="{% static './assets/js/slick.min.js' %}"></script>
+<!-- One Page, Animated-HeadLin -->
+<script src="{% static './assets/js/wow.min.js' %}"></script>
+<script src="{% static './assets/js/animated.headline.js' %}"></script>
+<script src="{% static './assets/js/jquery.magnific-popup.js' %}"></script>
+
+<!-- Date Picker -->
+<script src="{% static './assets/js/gijgo.min.js' %}"></script>
+<!-- Nice-select, sticky -->
+<script src="{% static './assets/js/jquery.nice-select.min.js' %}"></script>
+<script src="{% static './assets/js/jquery.sticky.js' %}"></script>
+<!-- Progress -->
+<script src="{% static './assets/js/jquery.barfiller.js' %}"></script>
+
+<!-- counter , waypoint,Hover Direction -->
+<script src="{% static './assets/js/jquery.counterup.min.js' %}"></script>
+<script src="{% static './assets/js/waypoints.min.js' %}"></script>
+<script src="{% static './assets/js/jquery.countdown.min.js' %}"></script>
+<script src="{% static './assets/js/hover-direction-snake.min.js' %}"></script>
+
+<!-- contact js -->
+<script src="{% static './assets/js/contact.js' %}"></script>
+<script src="{% static './assets/js/jquery.form.js' %}"></script>
+<script src="{% static './assets/js/jquery.validate.min.js' %}"></script>
+<script src="{% static './assets/js/mail-script.js' %}"></script>
+<script src="{% static './assets/js/jquery.ajaxchimp.min.js' %}"></script>
+
+<!-- Jquery Plugins, main Jquery -->
+<script src="{% static './assets/js/plugins.js' %}"></script>
+<script src="{% static './assets/js/main.js' %}"></script>
+
+</body>
+</html>
